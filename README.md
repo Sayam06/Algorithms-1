@@ -1,2 +1,2 @@
-# hacktobertry1
-hacktobertry1
+# algorithms
+algorithms
