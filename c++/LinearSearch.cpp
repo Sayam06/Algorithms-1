@@ -12,7 +12,7 @@ void main() {
          else
             i = -1;
             
-    if(i=-1)
+    if(i==-1)
        cout<<"Element not present";
     else
        cout<<"Element present at "<<i;
