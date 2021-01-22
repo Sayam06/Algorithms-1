@@ -1,8 +1,7 @@
 #include <iostream> 
 using namespace std; 
 
-void main() 
-{ 
+void main() {
     int arr[] = { 50,34,1,29,100,9,,21,12,19 }; 
     int x = 12,i=0; 
     int n = sizeof(arr) / sizeof(arr[0]); 
