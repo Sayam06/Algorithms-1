@@ -5,6 +5,6 @@ def reverse(arr, start, end):
         end -= 1
  
 arr = [1, 2, 3, 4, 5, 6]
-reverse(arr, 0, 5)
+reverse(arr, 0, len(arr)-1)
 print("Reversed list is :")
 print(arr)

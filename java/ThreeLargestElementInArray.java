@@ -1,4 +1,4 @@
-private class Algorithms { 
+public class ThreeLargestElementInArray {
 
 	public static void main(String[] args) {
 		int arr[] = {30,-1,4,8,20,1,0}; 
@@ -21,7 +21,7 @@ private class Algorithms {
 			      } else if (arr[i] > third) 
 				        third = arr[i]; 
 		        }        
-		    System.out.println("Three largest elements are " + first + second + third); 
+		    System.out.println("Three largest elements are " + first +" "+ second +" "+ third); 
     }	
 	} 
 } 

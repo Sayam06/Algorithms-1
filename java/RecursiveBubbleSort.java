@@ -1,6 +1,6 @@
 import java.util.Arrays;
  
-public class Ishaan
+public class RecursiveBubbleSort
 {
     static void bubbleSort(int arr[], int n){
     
