@@ -1,37 +1,20 @@
-// Iterative C program to reverse an array
 #include<stdio.h>
 
-void rvereseArray(int arr[], int start, int end)
-{
-	int temp;
-	while (start < end)
-	{
-		temp = arr[start]; 
+int main(){
+	int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+	int n = sizeof(arr) / sizeof(arr[0]); 
+	int start=0,end=n-1,i=0;
+
+	while (start < end){
+		int temp = arr[start]; 
 		arr[start] = arr[end];
 		arr[end] = temp;
 		start++;
 		end--;
 	} 
-}	 
 
-/* Utility that prints out an array on a line */
-void printArray(int arr[], int size)
-{
-int i;
-for (i=0; i < size; i++)
-	printf("%d ", arr[i]);
-
-printf("\n");
-} 
-
-/* Driver function to test above functions */
-int main() 
-{
-	int arr[] = {1, 2, 3, 4, 5, 6};
-	int n = sizeof(arr) / sizeof(arr[0]); 
-	printArray(arr, n);
-	rvereseArray(arr, 0, n-1);
-	printf("Reversed array is \n");
-	printArray(arr, n); 
+	printf("Reversed array is :");
+	for (i=0; i < size; i++)
+		printf("%d ", arr[i]); 
 	return 0;
 }
