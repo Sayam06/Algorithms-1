@@ -16,7 +16,7 @@ int main() {
    int arr[] = {14,1,13,7,50,1,23,20,60};
    int n = sizeof(arr)/sizeof(arr[0]);
    bubbleSort(arr, n);   
-   cout << "Sorted Sequence is: ";
+   cout << "Sorted Array is: ";
    for(int i = 0; i <n;i++){
       cout<<arr[i]<<endl;
    }
