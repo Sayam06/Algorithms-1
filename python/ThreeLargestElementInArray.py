@@ -2,8 +2,7 @@ import sys
  
 def print3largest(arr, n): 
     
-    if (n < 3): 
-      
+    if (n < 3):       
         print("Array Size Less Than 3") 
         return
       
@@ -27,6 +26,6 @@ def print3largest(arr, n):
       
     print("Three largest elements are",first, second, third) 
     
-arr = [1,20,-4,10,90,21,6] 
+arr = [1,20,-4,10,90,21,60] 
 n = len(arr) 
 print3largest(arr, n) 

@@ -1,8 +1,6 @@
-package Algorithms;
-
 import java.util.Arrays;
 
-private class BinarySearch { 
+public class BinarySearch { 
     int binarySearch(int arr[], int l, int u, int x){ 
         if (u >= l) { 
             //int mid = l + (u - l) / 2;            Simple explanation for calculating mid

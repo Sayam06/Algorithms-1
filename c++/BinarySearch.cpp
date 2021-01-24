@@ -1,3 +1,4 @@
+
 int binarySearch(int arr[], int l, int u, int x) 
 { 
     if (u >= l) { 
