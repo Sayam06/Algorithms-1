@@ -1,5 +1,4 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
   
 int main(){ 
     int arr[] = {1,-4,30,15,20,98,3,6}; 
@@ -21,10 +20,8 @@ int main(){
             }else if (arr[i] > third)  
                 third = arr[i];  
             }  
-        }    
-    }
-    
-    printf("Elements Are: %d %d %d",first,second,third);
+            printf("Three largest elements are %d %d %d\n", first, second, third);
+        }     
   
     return 0; 
 } 
