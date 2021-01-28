@@ -1,9 +1,9 @@
 public class Algorithms {  
-    static int factorial(int n) { 
-        if(n == 0) 
+    static int factorial(int num) { 
+        if(num == 0) 
            return 1; 
-        int i = n, fact = 1; 
-        while (n / i != n) { 
+        int i = num, fact = 1; 
+        while (num / i != num) { 
             fact = fact * i; 
             i--; 
         } 
@@ -13,6 +13,6 @@ public class Algorithms {
     public static void main(String[] args) { 
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        System.out.println("Factorial of "+num+" is "+factorial(5)); 
+        System.out.println("Factorial of "+num+" is "+factorial(num)); 
     } 
 } 
