@@ -1,10 +1,10 @@
 #include <stdio.h> 
    
-int factorial(int n) { 
-     if(n == 0) 
+int factorial(int num) { 
+     if(num == 0) 
         return 1; 
-    int i = n, fact = 1; 
-    while (n / i != n) { 
+    int i = num, fact = 1; 
+    while (num / i != num) { 
         fact = fact * i; 
         i--; 
     } 
@@ -12,7 +12,8 @@ int factorial(int n) {
 } 
   
 int main() { 
-    int num = 5; 
+    int num = 0;
+    scanf("%d",&num); 
     printf("Factorial of %d is %d", num, factorial(num)); 
     return 0; 
 } 
