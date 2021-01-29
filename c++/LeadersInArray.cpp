@@ -14,7 +14,7 @@ void leaders(int arr[], int n){
     }     
 } 
   
-int main
+int main(){
 
     int arr[] = {21, 20, 50, 2, 18, 11 , 3, 6, 0}; 
     int n = sizeof(arr)/sizeof(arr[0]); 
