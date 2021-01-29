@@ -14,7 +14,7 @@ public class LeadersInArray{
   
     public static void main(String[] args)  { 
         LeadersInArray la = new LeadersInArray(); 
-        int arr[] = new int[]{16, 17, 4, 3, 5, 2}; 
+        int arr[] = new int[]{21, 20, 50, 2, 18, 11 , 3, 6, 0}; 
         int n = arr.length; 
         la.Leaders(arr, n); 
     } 
