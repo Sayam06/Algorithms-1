@@ -7,5 +7,5 @@ def Leaders(arr, n):
             print arr[i], 
             maxright = arr[i] 
           
-arr = [16, 17, 4, 3, 5, 2] 
+arr = [21, 20, 50, 2, 18, 11 , 3, 6, 0]
 Leaders(arr, len(arr))
