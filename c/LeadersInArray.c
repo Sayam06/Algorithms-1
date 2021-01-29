@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 void Leaders(int arr[], int n){
     int max =  arr[n-1];
     int i;
