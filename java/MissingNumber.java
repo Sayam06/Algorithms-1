@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Algorithms{
     static int missing(int a[], int n) {
         int sum = 1;
@@ -11,6 +13,7 @@ public class Algorithms{
     public static void main(String[] args)
     {
         int[] arr = { 1, 2, 4, 5 ,6};
+        Arrays.sort(arr);
         System.out.println(missing(arr, arr.length));
     }
 }
