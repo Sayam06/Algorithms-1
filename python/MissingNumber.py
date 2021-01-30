@@ -4,7 +4,7 @@ def missing(a, n):
     for i in range(2, n + 2):
         sum += i
         sum -= a[i - 2]
-    return a
+    return sum
  
 arr = [1, 2, 3, 4, 6]
 print(missing(arr, len(arr)))
