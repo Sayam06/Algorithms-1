@@ -1,12 +1,12 @@
-public class Algortihms{
+public class Algorithms{
     static int missing(int a[], int n) {
         int sum = 1;
-        for (int i = 2; i <= (n + 1); i++)
+        for (int i = 2;i <= (n + 1);i++)
         {
-            total += i;
-            total -= a[i - 2];
+            sum += i;
+            sum -= a[i - 2];
         }
-        return total;
+        return sum;
     }
     public static void main(String[] args)
     {
