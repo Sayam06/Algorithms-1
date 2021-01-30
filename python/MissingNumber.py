@@ -7,4 +7,5 @@ def missing(a, n):
     return sum
  
 arr = [1, 2, 3, 4, 6]
+arr.sort()
 print(missing(arr, len(arr)))
