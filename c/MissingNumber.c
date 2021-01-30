@@ -1,13 +1,13 @@
 #include <stdio.h>
+
 int missing(int a[], int n) { 
     int i, sum=1; 
      
-    for ( i = 2; i<= (n+1); i++)
-    {
+    for ( i = 2; i<= (n+1); i++){
         sum+ =i;
         sum -= a[i-2];
     }
-    return arr; 
+    return sum; 
 } 
  
 int main() {
