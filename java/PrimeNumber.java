@@ -15,10 +15,10 @@ public class Algorithms {
  
     public static void main(String[] args){
         if (prime(19))
-            System.out.println("true");
+            System.out.println("Prime Number");
  
         else
-            System.out.println("false");
+            System.out.println("Non Prime");
     }
 }
  
