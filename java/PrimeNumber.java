@@ -14,7 +14,9 @@ public class Algorithms {
     }
  
     public static void main(String[] args){
-        if (prime(19))
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (prime(n))
             System.out.println("Prime Number");
  
         else
