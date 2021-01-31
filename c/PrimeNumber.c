@@ -17,7 +17,7 @@ int main(){
     }
 
     if(flag){
-            printf( "Prime");
+        printf( "Prime Number");
     }
     
     return 0;
