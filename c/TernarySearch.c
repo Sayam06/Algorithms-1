@@ -27,9 +27,9 @@ int main(){
     int res = ternary(l, r, x, arr);
 
     if(res != -1)
-        cout<<x<<" is present at index: "<< res;
+        printf("%d is present at index: %d", x,res);
     else
-        cout<<x<<" is not present";
+        printf("%d is not present ",x);
 
     return 0;
 }
