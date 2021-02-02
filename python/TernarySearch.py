@@ -1,5 +1,3 @@
-import math as mt
-
 def ternary(l, r, x, arr):
  
     if (r >= l):
@@ -21,11 +19,9 @@ def ternary(l, r, x, arr):
     return -1
 
  
-l, r, p = 0, 11, 12 
+l, r, x = 0, 11, 12 
 arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ,12 ]
 res = ternary(l, r, x, arr)
- 
-
  
 print(x,"is present at ", res)
  
