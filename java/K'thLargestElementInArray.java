@@ -1,22 +1,15 @@
-
 import java.util.Arrays; 
 import java.util.Collections; 
 
-class GFG { 
-	public static int kthSmallest(Integer[] arr, 
-								int k) 
-	{ 
-		Arrays.sort(arr); 
+public class Algorithms { 
+	public static int largest(Integer[] arr, int k) { 
+		Arrays.sort(arr,Collections.reverseOrder()); 
 		return arr[k - 1]; 
 	} 
-
-	// driver program 
-	public static void main(String[] args) 
-	{ 
-		Integer arr[] = new Integer[] { 12, 3, 5, 7, 19 }; 
-		int k = 2; 
-		System.out.print("K'th smallest element is " + kthSmallest(arr, k)); 
+	public static void main(String[] args) { 
+		Integer arr[] = new Integer[] { 1,2002,12,6,9,30,10,30 }; 
+		int k = 3; 
+		System.out.print(largest(arr, k)); 
 	} 
 } 
 
-// This code is contributed by Chhavi 
