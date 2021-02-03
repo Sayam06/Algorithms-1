@@ -19,6 +19,6 @@ int main(){
     int arr[] = {1,2002,12,6,9,30,10,30};
     int n = 9;
     int k = 3;
-    printf(" %",largest(arr, n, k));
+    printf(" %d",largest(arr, n, k));
     return 0;
 }
