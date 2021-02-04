@@ -19,6 +19,7 @@ int main(){
 			int res = fun(i)/fun(j)+fun(i-j);
 			printf("%d",&res);
 		}
+		printf("\n");
 	}
 
 	return 0;

@@ -18,7 +18,7 @@ public class Algorithms{
 			for(int j=0;j<=i;j++){
 				System.out.print((fun(i)/fun(i-j)*fun(j)));
 			}
-			
+			System.out.println();
 		}
 	}
 }
