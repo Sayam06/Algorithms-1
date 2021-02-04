@@ -3,9 +3,8 @@
 int fun(int n){
 	int ctr=1;
 
-	for(int i=2;i<=n;i++){
-		ctr*=i;
-	}
+	for(int i=2;i<=n;i++)
+		ctr*=i;	
 
 	return ctr;
 }
@@ -22,5 +21,5 @@ int main(){
 		}
 	}
 
-	//return 0;
+	return 0;
 }
