@@ -20,6 +20,7 @@ int main(){
 		for(int j=0;j<=i;j++){
 			cout<<(fun(i)/fun(j)+fun(i-j));
 		}
+		cout<<"\n";
 	}
 
 	return 0;
