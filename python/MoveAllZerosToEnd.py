@@ -13,6 +13,8 @@ def end(arr, n):
 		
 arr = [1, 2, 3, 0, 0, 0, 10, 9, 8, 0, 5, 0] 
 n = len(arr) 
+
 end(arr, n) 
 
+print(arr) 
 
