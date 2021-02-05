@@ -1,6 +1,6 @@
 import java.io.*; 
 
-class PushZero { 
+public class Algorithms { 
 	static void func(int arr[], int n) { 
 		int ctr = 0; 
  
