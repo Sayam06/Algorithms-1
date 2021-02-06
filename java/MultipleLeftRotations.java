@@ -9,9 +9,7 @@ public class LeftRotate
 		int start = k % n; 
 	
 		for (int i = start; i < start + n; i++) 
-			System.out.print(temp[i] + " "); 
-	
-		System.out.print("\n"); 
+			System.out.print(temp[i]); 	
 	} 
 
 	public static void main (String[] args) { 
@@ -21,13 +19,13 @@ public class LeftRotate
 		int temp[] = new int[2*n]; 
 		preprocess(arr, n, temp); 
 	
-		int k = 2; 
+		int k = 3; 
 		rotate(arr, n, k, temp); 
 	
-		k = 3; 
+		k = 5; 
 		rotate(arr, n, k, temp); 
 	
-		k = 4; 
+		k = 6; 
 		rotate(arr, n, k, temp); 
 	} 
 } 
