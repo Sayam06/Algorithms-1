@@ -9,7 +9,7 @@ void rotate(int arr[], int n, int k, int temp[]) {
 	int start = k % n; 
 
 	for (int i = start; i < start + n; i++) 
-		cout<<temp[i]; 
+		print("%d",temp[i]); 
 } 
 
 int main(){ 
