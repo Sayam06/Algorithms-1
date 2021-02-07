@@ -1,5 +1,4 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 void answer(int arr[], int n){
 	int i, j, temp;
@@ -29,4 +28,6 @@ int main(){
 	for (i = 0;i<n;i++) {
 		print("%d",arr[i]);
 	}
+
+	return 0;
 }
