@@ -30,4 +30,6 @@ int main(){
 	n = sizeof(arr) / sizeof(arr[0]);
 
 	answer(arr, n);
+
+	return 0;
 }
