@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-    int a = 5, b = 3;
+    int a = 2002, b = 12;
 
     cout<<"Before Swap :"<<a<<" , "<<b;
     
