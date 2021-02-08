@@ -5,8 +5,8 @@ int main(){
 
     int a = 5, b = 3;
 
+    cout<<"Before Swap :"<<a<<" , "<<b;
     
-
     //Swaping
     a ^= b;
     b ^= a;
