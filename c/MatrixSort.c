@@ -1,5 +1,6 @@
 #include <stdio.h> 
 
+
 void sort(int mat[3][3], int row, int col) { 
 	int size = row * col; 
 	for (int i = 0; i < size; i++) { 
@@ -13,6 +14,7 @@ void sort(int mat[3][3], int row, int col) {
 	} 
 } 
 
+
 void print(int mat[3][3], int row, int col) {
 
 	for (int i = 0; i < row; i++) { 
@@ -21,6 +23,7 @@ void print(int mat[3][3], int row, int col) {
 		printf("\n"); 
 	} 
 } 
+
 
 int main() { 
 	int mat[3][3] = { { 8, 6, 7 }, 
