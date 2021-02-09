@@ -1,53 +1,38 @@
 public class Algorithms { 
-	static void sortMat(int[][] data, int row, int col) 
-	{ 
 
-		int size = row * col; 
+	static void sort(int[][] mat, int row, int col) { 
 
-		for (int i = 0; i < size; i++) 
-		{ 
-			for (int j = 0; j < size - 1; j++) 
-			{ 
-
-				if (data[j / col][j % col] > data[(j + 1) 
-					/ col][(j + 1) % col]) 
-				{ 
-
-					int temp = data[j / col][j % col]; 
-					data[j / col][j % col] = data[(j + 1) 
-						/ col][(j + 1) % col]; 
-					data[(j + 1) / col][(j + 1) % col] = temp; 
+		int n = row * col; 
+		for (int i = 0; i < n; i++) { 
+			for (int j = 0; j < n - 1; j++) { 
+				if (mat[j / col][j % col] > mat[(j + 1) / col][(j + 1) % col]) {
+					int temp = mat[j / col][j % col]; 
+					mat[j / col][j % col] = mat[(j + 1)  / col][(j + 1) % col]; 
+					mat[(j + 1) / col][(j + 1) % col] = temp; 
 				} 
 			} 
 		} 
 	} 
 
-	static void printMat(int[][] mat, int row, int col) 
-	{ 
-
-		for (int i = 0; i < row; i++) 
-		{ 
-			for (int j = 0; j < col; j++) 
-			{ 
-				System.out.print(mat[i][j] + " "); 
-			} 
+	static void print(int[][] mat, int row, int col) { 
+		for (int i = 0; i < row; i++) { 
+			for (int j = 0; j < col; j++) 			 
+				System.out.print(mat[i][j]); 			
 			System.out.println(); 
 		} 
 	} 
 
-	public static void main(String[] args) 
-	{ 
+	public static void main(String[] args) { 
 		
-		int[][] mat = { { 5, 4, 7 }, 
-						{ 1, 3, 8 }, 
-						{ 2, 9, 6 } }; 
+		int[][] mat = { { 8, 6, 7 }, 
+                          { 2, 4, 5 }, 
+                            { 1, 3, 9 } }; 
 		
 		int row = mat.length; 
 		int col = mat[0].length; 
 
-		sortMat(mat, row, col); 
-
-		printMat(mat, row, col); 
+		sort(mat, row, col); 
+		print(mat, row, col); 
 	} 
 } 
 
