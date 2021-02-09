@@ -27,11 +27,8 @@ int main() {
 	int mat[3][3] = { { 8, 6, 7 }, 
 						{ 2, 4, 5 }, 
 						{ 1, 3, 9 } }; 
-		
-	
-
+                        
 	sort(mat, 3, 3); 
-
 	print(mat, 3, 3); 
 	return 0; 
 } 
