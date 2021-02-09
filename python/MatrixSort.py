@@ -1,12 +1,12 @@
-def sort(data, row, col): 	
+def sort(mat, row, col): 	
 	n = row * col 
 	for i in range(0, n): 
 		for j in range(0, n-1): 
 			
-			if ( data[j//col][j % col] >\ data[(j + 1)//col][(j + 1)% col] ):				
-				temp = data[j//col][j % col] 
-				data[j//col][j % col] =\ data[(j + 1)//col][(j + 1)% col] 
-				data[(j + 1)//col][(j + 1)% col] =\ temp 
+			if ( mat[j//col][j % col] >\ mat[(j + 1)//col][(j + 1)% col] ):				
+				temp = mat[j//col][j % col] 
+				mat[j//col][j % col] =\ mat[(j + 1)//col][(j + 1)% col] 
+				mat[(j + 1)//col][(j + 1)% col] =\ temp 
 
 def print(mat, row, col): 	
 	for i in range(row): 
@@ -15,11 +15,11 @@ def print(mat, row, col):
 		print() 
 
 
-mat = [ [5, 4, 7], 
-			[1, 3, 8], 
-			[2, 9, 6] ] 
+mat = [ [ 8, 6, 7], 
+			[2, 4, 5], 
+			[1, 3, 9] ] 
 row = len(mat) 
 col = len(mat[0])  
-sort(mat, row, col) 
-	 
+
+sort(mat, row, col) 	 
 print(mat, row, col) 
