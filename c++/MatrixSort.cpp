@@ -18,20 +18,20 @@ void print(int mat[3][3], int row, int col) {
 
 	for (int i = 0; i < row; i++) { 
 		for (int j = 0; j < col; j++) 		 
-			cout << mat[i][j] << " ";		
+			cout<<mat[i][j];		
 		cout << endl; 
 	} 
 } 
 
 int main() { 
-	int mat[3][3] = { { 5, 4, 7 }, 
-						{ 1, 3, 8 }, 
-						{ 2, 9, 6 } }; 
+	int mat[3][3] = { { 8, 6, 7 }, 
+						{ 2, 4, 5 }, 
+						{ 1, 3, 9 } }; 
 		
 	
 
-	sort(mat, row, col); 
+	sort(mat, 3, 3); 
 
-	print(mat, row, col); 
+	print(mat, 3, 3); 
 	return 0; 
 } 
