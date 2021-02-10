@@ -1,5 +1,4 @@
-#include <iostream.h>
-using namespace std;
+#include <stdio.h>
 
 int median(int arr1[], int arr2[], int n){
 	int i = 0; 
@@ -39,7 +38,7 @@ int main(){
 
 	int n = 6;
 
-	cout<<median(arr1, arr2, n) ;
+	printf("%d",median(arr1, arr2, n));
         
 	return 0;
 }
