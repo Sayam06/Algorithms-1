@@ -1,35 +1,31 @@
 #include <iostream.h>
 using namespace std;
 
-int median(int ar1[], int ar2[], int n){
+int median(int arr1[], int arr2[], int n){
 	int i = 0; 
 	int j = 0; 
-	int count;
+	int ctr;
 	int m1 = -1, m2 = -1;
-	for (count = 0; count <= n; count++)
-	{
-		if (i == n)
-		{
+
+	for (ctr = 0; ctr <= n; ctr++) {
+		if (i == n) {
 			m1 = m2;
-			m2 = ar2[0];
+			m2 = arr2[0];
 			break;
 		}
-		else if (j == n)
-		{
+		else if (j == n) {
 			m1 = m2;
-			m2 = ar1[0];
+			m2 = arr1[0];
 			break;
 		}
-		if (ar1[i] <= ar2[j])
-		{
+		if (arr1[i] <= arr2[j]) {
 			m1 = m2; 
-			m2 = ar1[i];
+			m2 = arr1[i];
 			i++;
 		}
-		else
-		{
+		else {
 			m1 = m2; 
-			m2 = ar2[j];
+			m2 = arr2[j];
 			j++;
 		}
 	}
@@ -38,8 +34,8 @@ int median(int ar1[], int ar2[], int n){
 }
 
 int main(){
-	int arr1[] = {1, 12, 15, 26, 38};
-	int arr2[] = {2, 13, 17, 30, 45};
+	int arr1[] = {1, 10, 12, 22, 2001, 2002};
+	int arr2[] = {2, 5, 17, 19, 27, 300};
 
 	int n1 = sizeof(arr1) / sizeof(arr1[0]);
 	int n2 = sizeof(arr2) / sizeof(arr2[0]);
