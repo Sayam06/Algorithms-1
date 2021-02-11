@@ -1,5 +1,4 @@
-#include <iostream> 
-using namespace std; 
+#include <stdio.h> 
 
 int partition (int arr[], int l, int h) { 
 	int pivot = arr[h]; 
@@ -30,12 +29,12 @@ void sort(int arr[], int l, int h)  {
 
 int main()  { 
 	int arr[] = {12,22,10,2002,1,20,7}; 
-	int n = sizeof(arr) / sizeof(arr[0]); 
+	int n = 7; 
 
 	sort(arr, 0, n - 1); 
 
 	for (int i = 0;i<n;i++) 
-		cout<<arr[i]; 
+		printf("%d",arr[i]); 
 
 	return 0; 
 } 
