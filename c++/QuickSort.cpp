@@ -1,4 +1,4 @@
-#include <iostream.h> 
+#include <iostream> 
 using namespace std; 
 
 int partition (int arr[], int l, int h) { 
