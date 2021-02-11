@@ -1,26 +1,26 @@
-def partition(arr,low,high): 
-	i = ( low-1 )		  
-	pivot = arr[high]	 
+def partition(arr,l,h): 
+	i = ( l-1 )		  
+	pivot = arr[h]	 
 
-	for j in range(low , high): 
+	for j in range(l , h): 
 
 		if arr[j] < pivot: 
 		
 			i = i+1
 			arr[i],arr[j] = arr[j],arr[i] 
 
-	arr[i+1],arr[high] = arr[high],arr[i+1] 
+	arr[i+1],arr[h] = arr[h],arr[i+1] 
 	return ( i+1 ) 
 
-def quickSort(arr,low,high): 
-	if low < high: 
-		pi = partition(arr,low,high) 
-		quickSort(arr, low, pi-1) 
-		quickSort(arr, pi+1, high) 
+def sort(arr,l,h): 
+	if l < h: 
+		pi = partition(arr,l,h) 
+		sort(arr, l, pi-1) 
+		sort(arr, pi+1, h) 
 
-arr = [10, 7, 8, 9, 1, 5] 
-n = len(arr) 
-quickSort(arr,0,n-1) 
+arr = [12,22,10,2002,1,20,7] 
 
-for i in range(n): 
-	print ("%d" %arr[i]), 
+sort(arr,0,len(arr)-1) 
+
+for x in arr: 
+	print (x)
