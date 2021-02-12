@@ -3,6 +3,7 @@ using namespace std;
 
 void selection(int arr[],int n){
     int min = 0;
+
     for(int i=0;i<n-1;i++){
         min=i;
         for(int j=i+1;j<n;j++){
@@ -18,7 +19,8 @@ void selection(int arr[],int n){
 }
  
 int main(){ 
-    int arr[] = { 50,12,22,10,2002,1,20,7 };   
+    
+    int arr[] = {50,12,22,10,2002,1,20,7};   
     int n = sizeof(arr) / sizeof(arr[0]);
 
     selection(arr,n);   
