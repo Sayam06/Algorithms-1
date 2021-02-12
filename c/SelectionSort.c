@@ -20,12 +20,12 @@ void selection(int arr[],int n){
 int main(){ 
     
     int arr[] = {50,12,22,10,2002,1,20,7};   
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n = 8;
 
     selection(arr,n);   
 
     for(int j=0;j<n;j++)
-        cout<<arr[j]<<" ";         
+        print("%d",arr[j]);         
 
     return 0;
 }
