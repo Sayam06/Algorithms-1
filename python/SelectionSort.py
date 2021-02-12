@@ -1,14 +1,12 @@
-import sys 
-A = [64, 25, 12, 22, 11] 
+arr = [50,12,22,10,2002,1,20,7] 
 
-for i in range(len(A)): 
-	 
-	min_idx = i 
-	for j in range(i+1, len(A)): 
-		if A[min_idx] > A[j]: 
-			min_idx = j 
+for i in range(len(arr)): 	 
+	min = i 
+	for j in range(i+1, len(arr)): 
+		if arr[j] < arr[min]: 
+			min = j 
 			
-	A[i], A[min_idx] = A[min_idx], A[i] 
+	arr[i], arr[min] = arr[min], arr[i] 
 
 for x in arr: 
 	print(x)
