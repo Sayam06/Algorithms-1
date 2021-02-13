@@ -16,7 +16,8 @@ void sort(int arr[], int n) {
 } 
 
 int main() { 
-	int arr[] = { 20 ,2001, 12, 1, 2002, 22, 2001, 10 }; 
+	int arr[] = { 20 ,2001, 12, 1, 2002, 22, 2001, 10}; 
+
 	int n = sizeof(arr) / sizeof(arr[0]); 
 
 	sort(arr, n); 
