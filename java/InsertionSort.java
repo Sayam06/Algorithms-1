@@ -14,7 +14,7 @@ public class Algorithms {
 		} 
 	} 
 	public static void main(String args[])  { 
-		int arr[] = {2001, 12, 1, 2002, 22, 2001, 10};  
+		int arr[] = {20, 2001, 12, 1, 2002, 22, 2001, 10};  
 
 		sort(arr); 
 

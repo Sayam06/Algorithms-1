@@ -1,10 +1,11 @@
 #include <iostream.h> 
 using namespace std; 
-void insertionSort(int arr[], int n) { 
-	int i, key, j; 
-	for (i = 1; i < n; i++)  { 
-		key = arr[i]; 
-		j = i - 1; 
+
+void sort(int arr[], int n) { 	
+
+	for (int i = 1; i < n; i++)  { 
+		int key = arr[i];  
+		int j = i - 1; 
 
 		while (j >= 0 && arr[j] > key)  { 
 			arr[j + 1] = arr[j]; 
@@ -13,11 +14,12 @@ void insertionSort(int arr[], int n) {
 		arr[j + 1] = key; 
 	} 
 } 
+
 int main() { 
-	int arr[] = { 12, 11, 13, 5, 6 }; 
+	int arr[] = { 20 ,2001, 12, 1, 2002, 22, 2001, 10 }; 
 	int n = sizeof(arr) / sizeof(arr[0]); 
 
-	insertionSort(arr, n); 
+	sort(arr, n); 
 
 	for(int i =0;i<n;i++) 
 		cout<<arr[i]<<" "; 
