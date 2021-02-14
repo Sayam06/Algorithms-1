@@ -1,5 +1,4 @@
-#include <iostream> 
-using namespace std; 
+#include <stdio.h>  
 
 void sort(int arr[], int n) { 
 	
@@ -20,12 +19,12 @@ void sort(int arr[], int n) {
 
 int main() { 
 	int arr[] = {23,12,10,2002,1,9,22,2001,5}; 
-	int n = sizeof(arr)/sizeof(arr[0]); 
+	int n = 9;
 
 	sort(arr, n); 
 	
 	for (int i=0; i < n; i++) 
-		cout<<arr[i]<<" "; 
+		print("%d",arr[i]); 
 
 	return 0; 
 } 
