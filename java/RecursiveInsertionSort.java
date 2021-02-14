@@ -5,17 +5,17 @@ public class Algorithms  {
 		if (n <= 1) 
 			return; 
 	
-		sort( arr, n-1 ); 
+		sort(arr, n-1); 
 	 
-		int last = arr[n-1]; 
+		int prev = arr[n-1]; 
 		int j = n-2; 
 	
-		while (j >= 0 && arr[j] > last) { 
+		while (j >= 0 && arr[j] > prev) { 
 			arr[j+1] = arr[j]; 
 			j--; 
 		} 
 		
-		arr[j+1] = last; 
+		arr[j+1] = prev; 
 	} 
 	
 	public static void main(String[] args) { 
