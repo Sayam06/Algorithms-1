@@ -1,23 +1,22 @@
-def insertionSortRecursive(arr,n): 
+def sort(arr,n): 
 	if n<=1: 
 		return
 	
-	insertionSortRecursive(arr,n-1) 
-	last = arr[n-1] 
+	sort(arr,n-1) 
+	prev = arr[n-1] 
 	j = n-2
 	
-	while (j>=0 and arr[j]>last): 
+	while (j>=0 and arr[j]>prev): 
 		arr[j+1] = arr[j] 
 		j = j-1
 
-	arr[j+1]=last 
+	arr[j+1]=prev 
 	 
-def printArray(arr,n): 
-	for i in range(n): 
-		print arr[i], 
 
-arr = [12,11,13,5,6] 
+arr = [23,12,10,2002,1,9,22,2001,5] 
 n = len(arr) 
-insertionSortRecursive(arr, n) 
-printArray(arr, n) 
+sort(arr, n) 
+
+for i in range(n): 
+	print arr[i],
 
