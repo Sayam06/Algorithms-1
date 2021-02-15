@@ -1,4 +1,5 @@
 public class Algorithms{
+    
     public static int main(String[] args){
         int arr[] = {1,2,3,4,5,6};
         int n = arr.length;
@@ -8,7 +9,7 @@ public class Algorithms{
             for(int j=i;j<n;j++){
                 sum+=arr[j];
             }
-            
+            System.out.println(sum);
         }
     }
 }
