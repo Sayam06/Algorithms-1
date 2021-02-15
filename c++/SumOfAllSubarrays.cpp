@@ -10,7 +10,7 @@ int main(){
         for(int j=i;j<n;j++){
             sum+=arr[j];
         }
-        
+        cout<<sum<<endl;
     }
 
     return 0;
