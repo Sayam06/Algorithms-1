@@ -8,8 +8,13 @@ int main(){
 
     int min = INT_MIN;
     for(int i=0;i<n;i++){
-        
-        cout<<endl;
+        if(min < arr[i]){
+            min=arr[i];
+            cout<<min;
+        }else{
+            cout<<min;
+        }
+        cout<<" ";
     }
     
     return 0;
