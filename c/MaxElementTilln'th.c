@@ -2,6 +2,7 @@
 #include <bits/stdc++.h>
 
 int main(){
+    int arr[] = {1,2,3,4,1,10,22,2002,12,2001};
     int n = 10;
 
     int min = INT_MIN;
