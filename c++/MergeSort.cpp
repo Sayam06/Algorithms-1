@@ -13,7 +13,7 @@ void merge(int arr[],int l,int r,int m){
     for(int j=0;j<n2;j++)
         a2[j] = arr[m+1+j];
 
-    int i=0,j=0,k=1;
+    int i=0,j=0,k=l;
 
     while(i<n1 && j<n2){
         if (a1[i] <= a2[j]) {
@@ -55,7 +55,11 @@ int main(){
 
     sort(arr,0,n-1);
 
-    
+    int i=0;
+    while(i < n){
+        cout<<arr[i]<<" ";
+        i++;
+    }
 
     return 0;
 }
