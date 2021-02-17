@@ -54,7 +54,11 @@ int main(){
 
     sort(arr,0,n-1);
 
-    
+    int i=0;
+    while(i < n){
+        printf("%d ",arr[i]);
+        i++;
+    }
 
     return 0;
 }
