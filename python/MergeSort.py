@@ -33,5 +33,8 @@ def mergeSort(arr):
 arr = [12,10,2001,1,5,7,2002,22]
 mergeSort(arr)
 
+for i in range(len(arr)):
+    print(arr[i],end=" ") 
+
 
 
