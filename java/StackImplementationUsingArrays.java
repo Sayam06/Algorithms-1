@@ -1,46 +1,40 @@
 class Stack {
 	static final int MAX = 1000;
 	int top;
-	int a[] = new int[MAX]; 
+	int arr[] = new int[MAX]; 
 	
-	Stack()
-	{
+	Stack() {
 		top = -1;
 	}
 
-	boolean push(int x)
-	{
+	void push(int x) {
 		if (top >= (MAX - 1)) {
-			System.out.println("Stack Overflow");
-			return false;
+			System.out.println("Stack Overflow");			
 		}
 		else {
-			a[++top] = x;
+			arr[++top] = x;
 			System.out.println(x);
-			return true;
 		}
 	}
 
-	int pop()
-	{
+	int pop() {
 		if (top < 0) {
 			System.out.println("Stack Underflow");
 			return 0;
 		}
 		else {
-			int x = a[top--];
+			int x = arr[top--];
 			return x;
 		}
 	}
 
-	int peek()
-	{
+	int peek() {
 		if (top < 0) {
 			System.out.println("Stack Underflow");
 			return 0;
 		}
 		else {
-			int x = a[top];
+			int x = arr[top];
 			return x;
 		}
 	}
