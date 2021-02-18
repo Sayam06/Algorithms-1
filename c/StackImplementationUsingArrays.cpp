@@ -15,14 +15,23 @@ class Stack{
         if(top < MAX)
             arr[++top] = x;
         else
-            cout<<"Stack Overflow!!";
+            cout<<"Stack Overflow!!"<<endl;
     }
 
     int pop(){
         if(top >= 0){
-            return arr[--top];
+            return arr[top--];
         }else{
-            cout<<"Stack Underflow!!";
+            cout<<"Stack Underflow!!"<<endl;
+            return 0;
+        }
+    }
+
+    int peek(){
+        if(top >= 0){
+            return arr[top];
+        }else{
+            cout<<"Stack Underflow!!"<<endl;
             return 0;
         }
     }
@@ -30,7 +39,9 @@ class Stack{
 
 int main(){
     class Stack st;
-    st.push(4);
+    st.push(12);
+    st.push(22);
     cout<<st.pop();
+    cout<<st.peek();
     return 0;
 }
