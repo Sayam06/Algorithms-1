@@ -12,6 +12,6 @@ int main(){
     int arr[] = {1,2,4,5,2,5,4,1,8};
     int n = sizeof(arr)/sizeof(arr[0]);
 
-    printf("%d",anss(arr,n));
+    printf("%d",ans(arr,n));
     return 0;
 }
