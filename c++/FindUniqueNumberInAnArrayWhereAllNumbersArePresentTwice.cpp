@@ -2,7 +2,7 @@
 using namespace std;
 
 int ans(int arr[],int n){
-    int sum = 0;
+    int sum = arr[0];
     for(int i=0;i<n;i++){
         sum=sum^arr[i];
     }
