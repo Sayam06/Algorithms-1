@@ -6,7 +6,7 @@ int ans(int arr[],int n){
     for(int i=0;i<n;i++){
         sum=sum^arr[i];
     }
-    return n;
+    return sum;
 }
 int main(){
     int arr[] = {1,2,4,5,2,5,4,1,8};
