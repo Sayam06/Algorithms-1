@@ -4,6 +4,6 @@ public class Algorithms {
 	}
   
   public static void main(String[] args) {
-    System.out.println(factc(5));
+    System.out.println(fact(5));
   }
 }
