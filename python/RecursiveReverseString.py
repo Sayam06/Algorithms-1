@@ -3,8 +3,8 @@ def rev(str):
         return
       
     str2 = str[0] 
-    rev(str2[1:]) 
-    print(str2) 
+    rev(str[1:]) 
+    print(str2, end='') 
   
 str = "algorithms"
 rev(str)
