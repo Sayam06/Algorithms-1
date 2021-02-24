@@ -10,7 +10,7 @@ void rev(string str){
 }
 
 int main(){
-    string str = "Algorithms";
+    string str = "algorithms";
     rev(str);
     return 0;
 }
