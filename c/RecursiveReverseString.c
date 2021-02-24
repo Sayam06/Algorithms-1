@@ -3,7 +3,7 @@
 void rev(char *str) { 
    if (*str)  { 
        rev(str+1); 
-       printf("%d", *str); 
+       printf("%c", *str); 
    } 
 } 
   
