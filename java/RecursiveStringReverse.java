@@ -1,5 +1,5 @@
 public class Algorithms {
-  void rev(String str){
+  static void rev(String str){
     if ((str==null)||(str.length() <= 1)) 
         System.out.println(str); 
     else { 
