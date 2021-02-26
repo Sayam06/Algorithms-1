@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-boolean pallindrome(int n){
+bool pallindrome(int n){
 	if(n < 0)
 		n=-n;
 	
