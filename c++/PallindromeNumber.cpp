@@ -9,6 +9,7 @@ bool pallindrome(int n){
 		return false;	
 
 	int sum=0,rem=0,num=n;
+	
 	while(n > 0){
 		rem = n%10;
 		sum=(sum*10) + rem;
@@ -22,11 +23,13 @@ bool pallindrome(int n){
 }
 
 int main() {  
-	int n = 6;
+	int n = 12;
+	
 	if(pallindrome(n))
 		cout<<"Yes, it's a pallindrome";
 	else	
 		cout<<"Not a pallindrome";
+	
 	return 0; 
 } 
 
