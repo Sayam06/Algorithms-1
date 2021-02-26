@@ -1,5 +1,5 @@
 public class Algorithms {
-static bool p(int n){
+ static boolean p(int n){
 	if(n < 0)
 		n=-n;
 	
@@ -19,6 +19,7 @@ static bool p(int n){
 	else
 		return false;
 }
+	
   public static void main(String[] args) {
     int n = 2002;
 	
