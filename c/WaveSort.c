@@ -20,9 +20,10 @@ void sort(int arr[], int n) {
 int main() { 
 	int arr[] = {22,10,3,12,21,1,2002,2001}; 
 	int n = 8; 
-	sort(arr, n); 
+	sort(arr, n); 	
 	
-
+	for (int i=0; i<n; i++) 
+	  printf("%d",arr[i]); 	
   
 	return 0; 
 } 
