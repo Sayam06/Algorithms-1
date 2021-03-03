@@ -11,5 +11,7 @@ def sort(arr, n):
 arr = [22,10,3,12,21,1,2002,2001] 
 
 sort(arr, len(arr)) 
+for i in range(0,len(arr)): 
+	print(arr[i]) 
 
 	
