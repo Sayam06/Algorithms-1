@@ -19,6 +19,9 @@ class Algorithms {
 		int arr[] = {22,10,3,12,21,1,2002,2001}; 
 		int n = arr.length; 
 		sort(arr, n); 
+		
+		for (int i : arr) 
+			System.out.print(i); 
     
 		
 	} 
