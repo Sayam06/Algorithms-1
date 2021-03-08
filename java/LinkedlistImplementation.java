@@ -43,6 +43,24 @@ public class LinkedlistImplementation {
 		}
 	}
 
+    void search(int data) {
+		if(isEmpty()) {
+			System.out.println("Empty List");
+			return;
+		}
+		
+		Node temp = head;
+		while(temp != null) {
+			if(temp.data == data) {
+				System.out.println("Found");
+				return;
+			}
+			temp = temp.next;
+		}
+		
+		System.out.println("Not Found");
+    }
+    
 	public static void main(String[] args) {
 		LinkedlistImplementation ll = new LinkedlistImplementation();
 		
@@ -51,8 +69,9 @@ public class LinkedlistImplementation {
 		ll.add(22);
 		ll.add(10);
 		
-		ll.printAll();
-
+        ll.printAll();
+        
+        ll.search(22);
 	}
 
 }
