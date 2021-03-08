@@ -27,12 +27,25 @@ void add(int data){
 
 void printAll()  { 
     struct Node* temp = head;
-    
+
     while (temp != NULL) { 
         printf("%d ", temp->data); 
         temp = temp->next; 
     } 
 } 
+
+void search(int data){
+    struct Node* temp = head;
+
+    while (temp != NULL) { 
+        if(temp->data == data){
+            printf("Element Present");
+            return;
+        }
+        temp = temp->next; 
+    }
+    printf("Element Not Present");
+}
 
 int main()  { 
 
@@ -41,6 +54,8 @@ int main()  {
     add(10);
 
     printAll();
+    
+    search(12);
 
 	return 0; 
 } 
