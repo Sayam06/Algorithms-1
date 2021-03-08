@@ -38,23 +38,48 @@ void add(int data){
 
 void printAll(){
     if(isEmpty()){
-        cout<<"Empty List";
+        cout<<"Empty List\n";
         return;
     }
 
     Node* temp = head;
 
     while(temp != NULL){
-        cout<<temp->data;
+        cout<<temp->data<<endl;
         temp = temp->next;
     }
 }
 
+void search(int data){
+    if(isEmpty()){
+        cout<<"Empty List\n";
+        return;
+    }
+
+    Node* temp = head;
+
+    while(temp != NULL){
+        if(temp->data == data){
+            cout<<"Element Present\n";
+            return;
+        }
+        temp = temp->next;
+    }
+    cout<<"Not Present\n";
+}
+
 int main(){
-    cout<<"Hello ,World";
+
+    add(12);
     add(1);
-    add(3);
+    add(22);
+    add(10);    
+    add(2001);
+    add(2002);
+
     printAll();
+
+    search(10);
 
     return 0;
 }
