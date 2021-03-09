@@ -68,7 +68,7 @@ public class LinkedlistImplementation {
 		ll.add(1);
 		ll.add(22);
 		ll.add(10);
-	  ;;.reverse();	
+	  ll.reverse();	
         ll.printAll();
        
 	}
