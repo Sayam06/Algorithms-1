@@ -52,6 +52,10 @@ void display(){
 }
 
 void reverse(){ 
+    if(isEmpty()){
+         cout<<"Empty List";
+         return;
+    } 
   
     Node* temp = head;
     Node* prev = NULL;
