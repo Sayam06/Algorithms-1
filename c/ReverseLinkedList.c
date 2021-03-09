@@ -51,6 +51,8 @@ void reverse(){
     while (temp != NULL) { 
         nxt = temp->next;
         temp->next = prev;
+        prev = temp;
+        temp = nxt; 
     } 
     prev = head;
 }
